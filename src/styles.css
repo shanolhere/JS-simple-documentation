@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center;
+  justify-content: center; */
+}
+.nav {
+  /* float: left; */
+  width: 30%;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+  position: fixed;
+}
+.main-content {
+  /* float: right; */
+  position: absolute;
+  width: 62%;
+  top: 2%;
+  left: 30%;
+  margin: 2rem 3rem;
+  /* border: 2px solid green; */
+  /* width: 100%; */
+}
+.heading {
+  padding: 25px 10px 25px 30px;
+  font-size: 2.3rem;
+  color: green;
+  /* background: red; */
+  font-weight: bolder;
+  border-bottom: 1px solid black;
+}
+
+.navlist {
+  list-style-type: ;
+}
+.navlist-link {
+  /* padding: 13px 10px 13px 30px; */
+  padding: 13px 20px;
+  border-bottom: 1px solid black;
+}
+.navlist-link:last-child {
+  border-bottom: none;
+}
+
+.navlist-link a {
+  padding-top: 100px;
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+/* .navlist-link .active {
+  color: red;
+} */
+
+.navlist-link a:hover,
+.navlist-link a:active {
+  color: green;
+  font-weight: bolder;
+  /* background-color: green; */
+}
+
+article h2 {
+  color: green;
+  font-size: 1.9rem;
+  padding: 1rem 0;
+}
+article p {
+  padding-left: 10px;
+  line-height: 1.8rem;
+  text-indent: inherit;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}
+article ul {
+  margin: 1.5rem 0;
+  padding-left: 50px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-indent: inherit;
+}
+article ul li {
+  padding: 10px;
+}
+code {
+  display: block;
+  padding: 1.4rem 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  background-color: #f7f7f7;
+}
+
+/*Media Queries */
+
+@media only screen and (max-width: 780px) {
+  .page-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .main-content {
+    /* float: right; */
+    position: absolute;
+    width: 62%;
+    top: 20%;
+    left: 30%;
+    margin: 2rem 3rem;
+    /* border: 2px solid green; */
+    /* width: 100%; */
+  }
+  .heading {
+    font-size: 1.8rem;
+  }
+}
